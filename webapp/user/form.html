@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Machine Learning Bank</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>CREDIT CARD FORM</h1>
+
+    <div class="CreditCard">
+      <img
+        src="https://i.pinimg.com/originals/11/b9/d9/11b9d923f238a9ccd95415de67427780.jpg"
+      />
+    </div>
+
+    <div class="page1">
+      <div id="UserForm">
+        <div class="centered">
+          <form action="/saveData" method="POST">
+            
+            <!-- Colum on the left -->
+            <div class="firstCol">
+              <h3>First Name:</h3>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Your first name.."
+              />
+              <h3>Gender:</h3>
+              <select id="gender" name="gender" class="dropDown">
+                <option value="">Select One</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+
+              <h3 class="propHeader">Is there a property:</h3>
+              <select id="property" name="property" class="dropDown">
+                <option value="">Select One</option>
+                <option value="T">True</option>
+                <option value="F">False</option>
+              </select>
+              <h3>Annual income:</h3>
+              <input
+                type="text"
+                id="income"
+                name="income"
+                placeholder="Your income.."
+              />
+              <h3>Choose your education level:</h3>
+              <select id="eduLevel" name="eduLevel" class="dropDown">
+                <option value="">Select One</option>
+                <option value="Higher education">Higher education</option>
+                <option value="Secondary / secondary special"
+                  >Secondary / secondary special</option
+                >
+                <option value="Incomplete higher">Incomplete higher</option>
+                <option value="Lower secondary">Lower secondary</option>
+                <option value="Academic degree">Academic degree</option>
+                <option value="Other">Other</option>
+              </select>
+              
+              <h3>Choose your way of living:</h3>
+              <select id="living" name="living" class="dropDown">
+                <option value="">Select One</option>
+                <option value="Rented apartment">Rented apartment</option>
+                <option value="House / apartment">House / apartment</option>
+                <option value="Municipal apartment">Municipal apartment</option>
+                <option value="With parents">With parents</option>
+                <option value="Co-op apartment">Co-op apartment</option>
+                <option value="Office apartment">Office apartment</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+ <!-- Colum on the right -->
+            <div class="secondCol">
+              <h3>Last Name:</h3>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <h3>Birthday:</h3>
+              <input type="date" name="bday" id="bday" />
+
+              <h3>Do you have a car:</h3>
+              <select id="car" name="car" class="dropDown">
+                <option value="">Select One</option>
+                <option value="T">True</option>
+                <option value="F">False</option>
+              </select>
+
+              <h3>Number of children:</h3>
+              <input
+                type="text"
+                id="childnum"
+                name="childnum"
+                placeholder="Number of children.."
+              />
+
+              <h3>Choose your income category:</h3>
+              <select id="incomeType" name="incomeType" class="dropDown">
+                <option value="">Select One</option>
+                <option value="Working">Working</option>
+                <option value="Commercial associate"
+                  >Commercial associate</option
+                >
+                <option value="Pensioner">Pensioner</option>
+                <option value="State servant">State servant</option>
+                <option value="Student">Student</option>
+                <option value="Other">Other</option>
+              </select>
+
+              <h3>Choose your marital status:</h3>
+              <select id="marital_status" name="marital_status" class="dropDown">
+                <option value="">Select One</option>
+                <option value="Civil marriage">Civil marriage</option>
+                <option value="Married">Married</option>
+                <option value="Single / not married"
+                  >Single / not married</option
+                >
+                <option value="Separated">Separated</option>
+                <option value="Widow">Widow</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="submitBton" id="submitBton">
+        <button
+          class="button home"
+          onclick="window.location='https://credit-app-new.glitch.me/public/index.html'"
+        >
+          Home
+        </button>
+        <button class="button submit" id="submit">Submit</button>
+      </div>
+    </div>
+
+    <footer>
+      UC DAVIS | ECS 171 FINAL PROJECT
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

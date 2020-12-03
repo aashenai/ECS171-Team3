@@ -1,0 +1,233 @@
+/* CSS files add styling rules to your content */
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #142a50;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #365c85;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 2em;
+  background: #e5e5e5;
+}
+
+.centered {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* In user Form */
+form {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+select {
+  margin: 10px;
+  width: 280px;
+  height: 40px;
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  background: white;
+  border: none;
+}
+
+input {
+  margin: 10px;
+  width: 270px;
+  height: 40px;
+  padding-left: 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  background: white;
+  border: none;
+}
+
+#UserForm {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#submitBton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page1 {
+  margin: 30px;
+}
+
+.submit {
+  background-color: #feebb1;
+  color: #142a50;
+  border-radius: 30px;
+  font-family: Montserrat;
+}
+
+.submit:hover {
+  background-color: #365c85;
+  color: #feebb1;
+}
+
+.home {
+  background-color: #feebb1;
+  color: #142a50;
+  border-radius: 30px;
+  font-family: Montserrat;
+}
+
+.home:hover {
+  background-color: #365c85;
+  color: #feebb1;
+}
+
+/* In index.html */
+.maindiv {
+  display: flex;
+  direction-flex: column;
+  text-align: center;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.User_Login {
+  display: flex;
+  direction-flex: row;
+  text-align: center;
+}
+
+.AggieCard img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  border-radius: 40px;
+}
+
+.CreditCard img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 180px;
+  margin: auto;
+  border-radius: 20px;
+
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+.User_Login {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 5px 10px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.ApplyButton {
+  background-color: #feebb1;
+  color: #142a50;
+  border: 2px solid;
+  border-radius: 30px;
+  font-family: Montserrat;
+}
+
+.ApplyButton:hover {
+  background-color: #365c85;
+  color: #feebb1;
+}
+
+.AboutButton {
+  background-color: #feebb1;
+  color: #142a50;
+  border: 2px solid;
+  border-radius: 30px;
+  font-family: Montserrat;
+}
+
+.AboutButton:hover {
+  background-color: #365c85;
+  color: #feebb1;
+}
+
+.resultBton {
+  background-color: #feebb1;
+  color: #142a50;
+  border: 2px solid;
+  border-radius: 30px;
+  font-family: Montserrat;
+}
+
+.resultBton:hover {
+  background-color: #365c85;
+  color: #feebb1;
+}
+
+footer {
+  padding: 0.5rem;
+  margin-top: 5rem;
+  text-align: center;
+  color: #142a50;
+  font-family: "Cinzel", serif;
+}
+
+@media (max-width: 767px) {
+  .AggieCard img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    border-radius: 40px;
+  }
+  
+  .User_Login {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
